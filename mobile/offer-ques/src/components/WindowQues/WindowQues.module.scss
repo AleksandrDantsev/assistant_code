@@ -1,0 +1,116 @@
+$base_color: #05a1a7;
+
+.list_ques {
+    width: 100%;
+}
+.window_content__answer {
+    width: 100%;
+    margin: 25px 0;
+    h1 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        color: $base_color;
+    }
+}
+.window_content {
+    flex-grow: 1;
+    margin-right: 5%;
+}
+
+.window_content__text {
+    margin: 40px 30px;
+    line-height: 35px;
+    p {
+        font-size: 25px;
+        font-weight: 400;
+        white-space:pre-line;
+    }
+}
+.title_page {
+    font-size: 1.7rem;
+    margin-bottom: 30px;
+    color: $base_color;
+}
+
+.input_search {
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+.input_search_input {
+    height: 35px;
+    width: 100%;
+    padding: 0 15px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px rgb(221, 221, 221);
+    &:focus {
+        outline: solid 1px $base_color;
+    }
+}
+
+.not_matches {
+    font-size: 25px;
+    color: #919191;
+}
+
+$widthBtBack: 130px;
+
+.button_back {
+    position: fixed;
+    bottom: 55px;
+    right: 40px;
+    height: 65px;
+    width: 70px;
+    background-color: $base_color;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 16px;
+    border: 0;
+    box-shadow: 0 1px 10px 0 rgb(207, 207, 207);
+    cursor: pointer;
+    margin-left: calc(100% - $widthBtBack);
+}
+
+@media screen and (max-width:600px) {
+    .input_search {
+        margin: 30px auto;
+        margin-top: 50px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .window_content {
+        margin: 0;
+    }
+    .window_content__answer {
+        h1 {
+            display: inline-block;
+            padding: 0 5px;
+            margin-left: 10px;
+            font-size: 2rem;
+            line-height: 45px;
+        }
+    }
+    .window_content__text {
+        margin: 20px 15px;
+        p {
+            font-size: 23px;
+        }
+    }
+    .button_back {
+        bottom: 20px;
+        right: 20px;
+        margin-left: 0;
+    }
+
+    .title_page {
+        font-size: 1.8rem;
+        margin-top: 25px;
+        padding: 0 20px;
+    }
+
+    .input_search {
+        max-width: 90%;
+    }
+}

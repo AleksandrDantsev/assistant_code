@@ -1,0 +1,25 @@
+.menu_nav {
+    position: fixed;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+}
+.menu_nav_list {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+
+@media screen and (max-width:400px) {
+    .menu_nav_list {
+        width: 100%;
+    }
+ 
+}
