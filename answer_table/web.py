@@ -28,7 +28,7 @@ web = {
 	},
 
 	"p": {
-		"ques": " Progressive Web Application (PWA)",
+		"ques": "Progressive Web Application (PWA)",
 		"result": 
 '''
 	Progressive Web Applications (PWA) - это новый тип веб-приложений, которые сочетают 
@@ -68,7 +68,7 @@ web = {
 	},
 
 	"c": {
-		"ques": " Progressive Web Application (PWA)",
+		"ques": "Кроссбраузерность",
 		"result": 
 '''
 	Кроссбраузерность — это свойство веб-сайта или веб-приложения отображаться и работать 
@@ -823,7 +823,7 @@ web = {
 	},
 
 	"ww": {
-		"ques": "Что такое Service Workers",
+		"ques": "Что такое Web Workers",
 		"result": 
 '''
 	Web Workers - это технология, которая позволяет выполнять JavaScript-код в 

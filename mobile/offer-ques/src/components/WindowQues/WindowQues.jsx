@@ -82,7 +82,7 @@ function WindowQues({windowContentName, setIsActiveMenu, setWindowContentName}) 
                         placeholder='Поиск по содержимому всех тем'/>
                 </div>
                 <h1 className={st.title_page}>
-                    {namingCategory[windowContentName]}
+                    {Boolean(inputValue) ? "Результат поиска" : namingCategory[windowContentName]}
                 </h1>
             </React.Fragment>
             }

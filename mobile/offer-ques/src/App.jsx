@@ -5,7 +5,6 @@ import WindowQues from './components/WindowQues/WindowQues';
 
 
 
-
 function App() {
   const [windowContentName, setWindowContentName] = useState('');
   const [isActiveMenu, setIsActiveMenu] = useState(true);

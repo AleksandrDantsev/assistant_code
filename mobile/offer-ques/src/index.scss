@@ -48,3 +48,14 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+html,
+body,
+main {
+	height: 100%;
+}
+
+@media screen and (max-width: 400px) {
+	html {
+		overflow-x: hidden;
+	}
+}

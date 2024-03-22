@@ -168,6 +168,13 @@ java_script = {
 	Для этого мы можем использовать свойство event.defaulPrevented, 
 	которое возвращает логическое значение, служащее индикатором применения 
 	к элементу метода event.preventDefault.
+
+	if (event.target.tagName === "A") {
+    	log.innerText = event.defaultPrevented
+      	? `Sorry, but you cannot visit this link!\n${log.innerText}`
+      	: `Visiting link…\n${log.innerText}`;
+  	}
+	}
 '''
 	},
 
@@ -372,6 +379,20 @@ java_script = {
 	содержит все аргументы, переданные в функцию. Он доступен внутри
 	функции и позволяет обращаться к аргументам без необходимости
 	указывать их имена.
+
+	function func1(a, b, c) {
+  		console.log(arguments[0]);
+  	// Expected output: 1
+
+  	console.log(arguments[1]);
+  		// Expected output: 2
+
+  	console.log(arguments[2]);
+  		// Expected output: 3
+}
+
+func1(1, 2, 3);
+
 '''
 	},
 
@@ -445,7 +466,8 @@ java_script = {
 		"result": 
 '''
 	Array.isArray(yourVariable)
-	val.prototype.constructor = Array
+	val.constructor === Array
+	Object.prototype.toString.call(val) === '[object Array]'
 '''
 	},
 
@@ -505,9 +527,27 @@ java_script = {
 	последовательно, когда результат выполнения одной функции передается
 	в качестве аргумента следующей функции
 
-	var obj = { method1: function() {}, method2: function() {} }
+	const get = {
+	  r() {
+	    console.log("r")
+	    return this
+	  },
+	  a() {
+	    console.log("a")
+	    return this
+	  },
+	  d() {
+	    console.log("d")
+	    return this
+	  },
+	  v() {
+	    console.log("v")
+	    return this
+	  },
+	}
 
-	obj.method1().method2()
+	get.r().d().a().v())
+
 '''
 	},
 
@@ -546,6 +586,8 @@ java_script = {
 	свойства и методы, доступные для всех объектов данного класса.
 	Прототип определяет поведение объекта и позволяет добавлять новые
 	свойства и методы без изменения исходного кода класса.
+
+	
 '''
 	},
 

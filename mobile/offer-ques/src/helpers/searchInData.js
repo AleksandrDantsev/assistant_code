@@ -5,6 +5,7 @@ const find_matches = (word, object) => {
     for (let [category, val] of Object.entries(object)) {
         for (let [key, answer] of Object.entries(val)) {
             let lowerText = JSON.stringify(answer).toLowerCase()
+            
             if (lowerText.indexOf(lowerTrimWord) != -1) {
                 answers.push([key, answer, category])
             }
