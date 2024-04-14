@@ -1,7 +1,7 @@
 import json
 import sys
 sys.path.append("..")
-from answer_table.html import html
+from answer_table.git import git
 from answer_table.html import html
 from answer_table.css import css
 from answer_table.java_script import java_script
@@ -16,6 +16,7 @@ from answer_table.react import react
 
 
 table = [
+    git,
     css, 
     html, 
     java_script, 
@@ -28,6 +29,7 @@ table = [
     react
 ]
 table_string = [
+    "git",
     "css",  
     "html",
     "java_script", 

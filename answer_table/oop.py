@@ -203,6 +203,58 @@ oop = {
 	в одном из прототипов, то генерируется ошибка. Таким образом, механизм прототипов 
 	позволяет JavaScript объектам наследовать свойства и поведение без использования 
 	классической системы наследования классов.
+
+	1. __proto__ есть у КАЖДОГО объекта(в том числе class, function и примитива(boxing))
+	2. prototype существует ТОЛЬКО у класса(class) или function(Declaration), но не у 
+	   примитивов и объектов
+
+		т.к. __proto__ есть у каждого объекта и __proto__ ссылается на prototype класса, то:
+		const obj = {name: 'ivan'};
+		const arr = [4, 6, 4];
+
+		obj.__proto__ === Object.prototype // true
+		arr.__proto__ === Array.prototype // true
+
+		но т.к. prototype существует только у class и function(Declaration), то:
+
+		const obj = {name: 'ivan'};
+		obj.prototype // undefined
+
+	3. __proto__ ссылается на prototype конструктора(класса) благодаря которому был создан
+
+		const f = function() {}
+		const str = "this is string";
+
+		f.__proto__ === Function.prototype   // true
+		str.__proto__ === Function.prototype   // false
+
+	4. __proto__ одного по типу объекта равны, но разные по типу объекты имеют разный __proto__
+
+		const num = 55;
+		const nub2 = 953;
+
+		const str = "i'm string"
+
+		num.__proto__ === num2.__proto__   // true
+		num.__proto__ === str.__proto__   // false
+
+	5. Каждый prototype это независимый объект который содержит в себе методы, присущие
+	   определенному классу
+
+	   Когда мы обращаемся к методу которого нет в объекте:
+
+	   const obj = {name: "victor"};
+	   obj.toString() // toString не существует в obj, поэтому:
+	   obj.__proto__ -> Object.prototype.toString
+
+	6. У каждого function и class имеется свой собственный prototype
+
+		const f1 = function() {}
+		const f2 = function() {}
+
+		f1.prototype === f2.prototype  // false
+
+	7. У стрелочной функции нет prototype( __proto__ есть )
 '''
 	},
 

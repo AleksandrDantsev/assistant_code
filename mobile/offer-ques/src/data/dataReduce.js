@@ -1,4 +1,5 @@
 import html from "./html.json";
+import git from "./git.json";
 import css from "./css.json";
 import react from "./react.json";
 import type_script from "./type_script.json";
@@ -18,6 +19,7 @@ const navigationTopic = {
     type_script: type_script,
     web: web,
     java_script: java_script,
+    git: git,
     oop: oop,
     testing: testing,
     vue: vue,
@@ -27,6 +29,7 @@ const category = Object.keys(navigationTopic);
 
 const namingCategory = {
     html: "HTML и вёрстка",
+    git: "GIT",
     css: "CSS и препроцессоры",
     methodology: "Методология",
     react: "React",

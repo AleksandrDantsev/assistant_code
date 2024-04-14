@@ -1,4 +1,112 @@
 methodology = {
+	"m": {
+		"ques": "Метрики в программировании",
+		"result": 
+'''
+	В программировании метрики представляют собой набор количественных 
+	показателей, которые используются для измерения и оценки различных 
+	аспектов разработки программного обеспечения. Они помогают разработчикам, 
+	менеджерам и командам понять, насколько успешно выполняется проект, и 
+	определить области, где необходимо улучшить производительность.
+
+	Вот некоторые из наиболее распространенных метрик в программировании:
+
+	1.Response Time(Время отклика) - это время, которое требуется для получения 
+	ответа от сервера на запрос пользователя. Оно измеряется в миллисекундах 
+	(мс) или секундах.
+	Время отклика: от 200 до 500 мс считается хорошим показателем.
+
+	Average Response Time = The total time taken to respond to tickets over a 
+	given time, divided by the total number of tickets (responses) over a given time.
+
+	Here, total individual time taken for each ticket= 10 minutes, 8 minutes, 30 minutes, 
+	15 minutes, 7 minutes, 8 minutes, 6 minutes
+
+	Total number of tickets = 7 
+	Total time taken = 84 minutes
+	Average Response time = 10+8+30+15+7+8+6 (in minutes) divided by 7 = 12 minutes
+
+
+	2.Load Time(Время загрузки) - время, необходимое для загрузки веб-страницы 
+	или приложения на устройство пользователя 
+	Время загрузки: веб-страницы должны загружаться за 2-4 секунды, 
+	а приложения - за 5-10 секунд.
+
+	!average website load time in 2023 is 2.5 seconds on desktop and 8.6 seconds 
+	on mobile
+
+	How to improve page load time
+	There are many ways to improve this metric, but here are some of the most common:
+
+	1.File Compression: Reduces the size of the CSS, HTML, JavaScript, images, and 
+	other web elements. (Check out ImageOptim for Mac to compress images).
+	2.Minification: Optimizes the code by removing unused code, white spaces, 
+	comments, etc.
+	3.Reducing redirects: Each time a web page redirects the browser to another 
+	server, the user faces an additional time for the request-response cycle 
+	to complete. Best to get rid of these if possible.
+	4.CDN: A content delivery network (CDN) puts content geographically closer 
+	to your users so they can receive it quicker.
+
+
+	3.Performance(Производительность) - скорость выполнения кода и обработки 
+	данных. Измеряется в количестве операций в секунду (ops/s).
+
+	Производительность: зависит от конкретного приложения, но обычно 
+	составляет от 10 000 до 100 000 ops/s.
+
+
+	4.Memory Usage(Эффективность использования памяти) - объем оперативной памяти, 
+	используемой приложением в процессе работы.
+	Memory Usage = used memory / sum * 100.
+
+	Эффективность использования памяти: не должно превышать 30% от доступной оперативной памяти.
+
+
+	5.Error Rate(Количество ошибок) - количество обнаруженных ошибок в коде.
+	Error Rate = (Number of requests with errors / Total number of requests) * 100%
+
+	Количество ошибок: стремится к нулю.
+
+
+	6.Test Coverage(Покрытие кода тестами) - процент кода, который был протестирован.
+	Test coverage = line of code covered by test * 100 / total lines of code
+
+	Покрытие кода тестами: должно быть не менее 70-80%.
+
+
+	7.Regression Testing Rate(Regression Testing Rate) - частота обнаружения новых 
+	ошибок после внесения изменений в код.
+
+	Скорость регрессионного тестирования: должно быть меньше 1% новых 
+	ошибок после каждого изменения.
+
+
+	8.Code Duplication(Доля дублированного кода) - количество идентичного или 
+	похожего кода в проекте.
+
+	Доля дублированного кода: стремится к минимуму.
+
+
+	9.Dependency Density(Dependency Density) - количество внешних зависимостей, 
+	используемых в проекте.
+
+	Плотность зависимостей: зависит от проекта, но не должно быть слишком 
+	много внешних зависимостей.
+
+
+	10.User Satisfaction(Уровень удовлетворенности пользователей) - показатель, 
+	измеряющий удовлетворенность пользователей продуктом или сервисом
+	User Satisfaction = number of happy customers / total number of customers
+
+	Уровень удовлетворенности пользователей: должен быть высоким, но конкретные 
+	значения могут отличаться в зависимости от продукта и аудитории.
+
+	Эти метрики помогают команде разработчиков понять, как работают их продукты, 
+	выявить проблемы и оптимизировать процессы разработки.
+'''
+	},
+
 	"i": {
 		"ques": "Что такое бэм?",
 		"result": 
